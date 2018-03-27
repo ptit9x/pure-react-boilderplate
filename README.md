@@ -1,4 +1,4 @@
-# React Redux Boilerplate
+# Pure React Boilerplate
 
 ## Installing
 
