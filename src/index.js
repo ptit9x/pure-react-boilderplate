@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import css from './index.scss';
-
-const docRoot = document.getElementById('root');
+import css from './index.css';
 
 class Hello extends Component {
   render() {
@@ -14,5 +12,5 @@ class Hello extends Component {
 
 ReactDOM.render(
   <Hello />,
-  docRoot
+  document.getElementById('root')
 );

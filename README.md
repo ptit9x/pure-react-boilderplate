@@ -4,7 +4,7 @@
 
 NodeJS and NPM is required
 
-1. Clone this repo ``git clone https://github.com/sydinh/template-for-react-and-redux.git``.
+1. Clone this repo ``git clone https://gitlab.com/ngochuynh1991/pure-react-boilerplate.git``.
 2. Run ``npm install`` to get all the Node Packages.
 3. Run ``npm run dev`` for development mode.
 4. New browser window should open automatically.
@@ -23,4 +23,4 @@ NodeJS and NPM is required
 5. Submit a pull request.
 
 ## Author
-[A front-end developer with no special talents, only passionately curious.](https://github.com/sydinh)
+[A front-end developer with no special talents, only passionately curious.](https://gitlab.com/ngochuynh1991)
