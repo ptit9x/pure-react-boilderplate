@@ -1,21 +1,10 @@
 import React from 'react';
-import { Switch, Link, Route, Redirect } from 'react-router-dom';
-import { HomePage, User } from './Main';
+import Home from './components/Home';
 
 const App = () => (
-  <div className="Main">
-    <div className="menu">
-      <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/user">User</Link></li>
-      </ul>
-    </div>
-    <Switch>
-      <Route exact path="/" component={HomePage} />
-      <Route path="/user" component={User} />
-      <Redirect to="/" />
-    </Switch>
-  </div>
+	<div className="Main">
+		<Home />
+	</div>
 );
 
 export default App;

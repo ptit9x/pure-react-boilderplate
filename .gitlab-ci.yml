@@ -1,4 +1,4 @@
-image: node:6.11.3
+image: registry.temando.io/continuous-integration/node
 
 pages:
   stage: deploy
