@@ -1,16 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
-import css from './index.css';
+import { BrowserRouter as Router, browserHistory, Route } from 'react-router-dom';
+import './index.scss';
+import App from './App';
 
-class Hello extends Component {
-  render() {
-    return (
-      <h1>Hello world!</h1>
-    );
-  }
-}
-
-ReactDOM.render(
-  <Hello />,
-  document.getElementById('root')
+// const baseUrl = process.env.PUBLIC_URL;
+const Index = () => (
+  <Router history={browserHistory}>
+    <Route path="/" component={App} />
+  </Router>
 );
+
+ReactDOM.render(<Index />, document.getElementById('index'));

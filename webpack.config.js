@@ -1,50 +1,7 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const merge = require('webpack-merge');
+const common = require('./webpack.common.js');
 
-const SOURCE_DIR = path.resolve(__dirname, './src');
-const BUILD_DIR = path.resolve(__dirname, './build');
-
-const isProd = process.env.NODE_ENV === 'production';
-
-const config = {
-  entry: SOURCE_DIR + '/index.js',
-  output: {
-    path: BUILD_DIR,
-    filename: './index.bundle.js'
-  },
-  module: {
-    rules: [
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: [
-          {loader: 'babel-loader'}
-        ]
-      },
-      {
-        test: /\.css$/,
-        exclude: /node_modules/,
-        use: [
-          {loader: 'style-loader'},
-          {loader: 'css-loader', options: {sourceMap: true}}
-        ]
-      }
-    ]
-  },
-  devServer: {
-    contentBase: path.join(__dirname, 'build'),
-    historyApiFallback: true,
-    open: true,
-    stats: 'errors-only'
-  },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: './src/index.html',
-      minify: {
-        collapseWhitespace: isProd
-      }
-    })
-  ]
-}
-
-module.exports = config;
+module.exports = merge(common, {
+  devtool: 'inline-source-map',
+  mode: 'development',
+});

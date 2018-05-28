@@ -1,7 +1,9 @@
-# Pure React Boilerplate
+# Codebrahma-React-Boilerplate
+
+# React Redux Boilerplate
+A React Boilerplate with all the latest packages.
 
 ## Installing
-
 NodeJS and NPM is required
 
 1. Clone this repo ``git clone https://gitlab.com/ngochuynh1991/pure-react-boilerplate.git``.
@@ -11,8 +13,10 @@ NodeJS and NPM is required
 
 ## Built With
 
-* [Webpack](https://webpack.js.org/) - A module bundler.
+* [Webpack 4](https://webpack.js.org/) - A module bundler.
 * [Babel](https://babeljs.io/) - A JavaScript compiler.
+
+#### Style using SASS / CSS
 
 ## Contributing
 
@@ -22,5 +26,27 @@ NodeJS and NPM is required
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request.
 
+## For Installing
+
+```javascript
+npm install
+```
+
+## Linting
+
+```javascript
+npm run lint
+```
+
+## Building
+
+```javascript
+npm run build
+```
+
 ## Author
 [A front-end developer with no special talents, only passionately curious.](https://gitlab.com/ngochuynh1991)
+
+
+
+
