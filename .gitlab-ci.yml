@@ -5,14 +5,12 @@ pages:
   script:
   - npm i
   - npm run build
-  - rm -r public
-  - mkdir public
+  # - rm -r public
+  # - mkdir public
   - cp -r dist/* public
   artifacts:
     paths:
-    - build
     - public
     - node_modules
   only:
     - master
-    - development
