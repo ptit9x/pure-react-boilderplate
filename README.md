@@ -1,12 +1,14 @@
-# Codebrahma-React-Boilerplate
+# React Tools
+A Project generate document from base64
 
-# React Redux Boilerplate
-A React Boilerplate with all the latest packages.
+## Usage
+* Go to http://huynh.dn.pages.temando.io/tools
+* Paste base64 code in the form input and click submit
 
 ## Installing
 NodeJS and NPM is required
 
-1. Clone this repo ``git clone https://gitlab.com/ngochuynh1991/pure-react-boilerplate.git``.
+1. Clone this repo ``git clone git@src.temando.io:huynh.dn/tools.git``.
 2. Run ``npm install`` to get all the Node Packages.
 3. Run ``npm start`` for development mode.
 4. New browser window should open automatically.
@@ -42,7 +44,7 @@ Demo:
 5. Submit a pull request.
 
 ## Author
-[A front-end developer with no special talents, only passionately curious.](https://gitlab.com/ngochuynh1991)
+[HuynhDN.](https://src.temando.io/huynh.dn/)
 
 
 

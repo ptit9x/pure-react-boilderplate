@@ -1,9 +1,29 @@
-image: node:6.11.3
+image: registry.temando.io/continuous-integration/node
+
+stages:
+  - build
+  - validate
+  - deploy
+
+install:
+  stage: build
+  script:
+    - npm install
+  artifacts:
+    paths:
+      - node_modules/
+    expire_in: 1 week
+
+code lint:
+  stage: validate
+  script:
+    - npm run lint
+  dependencies:
+    - install
 
 pages:
   stage: deploy
   script:
-  - npm i
   - npm run build
   - mkdir .public
   - cp -r dist/* .public
@@ -11,6 +31,5 @@ pages:
   artifacts:
     paths:
     - public
-    - node_modules
   only:
     - master
