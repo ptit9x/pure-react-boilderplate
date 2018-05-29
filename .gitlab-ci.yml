@@ -9,7 +9,6 @@ install:
   stage: build
   script:
     - npm install
-    - npm run build
   artifacts:
     paths:
       - node_modules/
@@ -25,6 +24,7 @@ code lint:
 pages:
   stage: deploy
   script:
+  - npm run build
   - mkdir .public
   - cp -r dist/* .public
   - mv .public public
