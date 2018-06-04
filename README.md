@@ -1,14 +1,9 @@
-# React Tools
-A Project generate document from base64
-
-## Usage
-* Go to http://huynh.dn.pages.temando.io/tools
-* Paste base64 code in the form input and click submit
-
+# React BoilerPlate
+Demo: https://ngochuynh1991.gitlab.io/huynhdn-react-boilerplate
 ## Installing
 NodeJS and NPM is required
 
-1. Clone this repo ``git clone git@src.temando.io:huynh.dn/tools.git``.
+1. Clone this repo ``git clone https://github.com/ptit9x/pure-react-boilderplate.git``.
 2. Run ``npm install`` to get all the Node Packages.
 3. Run ``npm start`` for development mode.
 4. New browser window should open automatically.
@@ -44,7 +39,7 @@ Demo:
 5. Submit a pull request.
 
 ## Author
-[HuynhDN.](https://src.temando.io/huynh.dn/)
+[HuynhDN.](https://github.com/ptit9x/)
 
 
 
