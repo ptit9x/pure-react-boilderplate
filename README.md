@@ -1,5 +1,7 @@
 # React BoilerPlate
 Demo: https://ngochuynh1991.gitlab.io/huynhdn-react-boilerplate
+
+## Added now for deploy
 ## Installing
 NodeJS and NPM is required
 
